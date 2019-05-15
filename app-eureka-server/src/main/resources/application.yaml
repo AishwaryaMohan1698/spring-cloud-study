@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 8000
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://docker-eureka-server-container:8000/eureka/
+  instance:
+    preferIpAddress: true
